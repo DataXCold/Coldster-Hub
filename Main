@@ -40,7 +40,169 @@ BimaCockSection:NewButton("Keyboard", "Executed Keyboard Script", function()
 end)
 
 BimaCockSection:NewButton("RTX Shaders", "Executed RTX Shaders script", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Coldster Hub | Universal", "Ocean")
+
+-- Local
+local AthaCum = Window:NewTab("Local")
+local AthaCumSection = AthaCum:NewSection("Local Player")
+
+AthaCumSection:NewSlider("Walkspeed", "Changes how fast you walk.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+    AthaCumSection:NewSlider("JumpPower", "Changes how high you jump.", 250, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    AthaCumSection:NewToggle("Infinite Jump", "Lets you infinitely jump", function()
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+    end)
+    
+AthaCumSection:NewSlider("FOV", "Change your camera FOV", 120, 80, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Workspace.CurrentCamera.FieldOfView = s
+end)
+    
+-- Main
+
+local BimaCock = Window:NewTab("Main")
+local BimaCockSection = BimaCock:NewSection("Main Scripts")
+
+BimaCockSection:NewButton("Fly", "Executed Fly Script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Z7PW3NLW"))()
+end)
+
+BimaCockSection:NewButton("Keyboard", "Executed Keyboard Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+BimaCockSection:NewButton("RTX Shaders", "Executed RTX Shaders script", function()
     loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+end)
+
+BimaCockSection:NewButton("FE Animation Hub", "Executed FE Animation Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+
+BimaCockSection:NewButton("Anti AFK", "Executed Anti AFK Script", function()
+    local GC = getconnections or get_signal_cons
+local Players = game:GetService("Players")
+if GC then
+    for i, v in pairs(GC(Players.LocalPlayer.Idled)) do
+        if v["Disable"] then
+            v["Disable"](v)
+        elseif v["Disconnect"] then
+            v["Disconnect"](v)
+        end
+    end
+else
+    Players.LocalPlayer.Idled:Connect(
+        function()
+            VirtualUser:CaptureController()
+            VirtualUser:ClickButton2(Vector2.new())
+        end
+    )
+end
+
+end)
+
+BimaCockSection:NewButton("FPS Booster", "executed fps booster script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zJztwUg1"))()
+end)
+
+BimaCockSection:NewButton("Teleport Tool", "gives you teleport tool", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GuBiX19e"))()
+end)
+
+BimaCockSection:NewButton("Chat Spy", "Execute chat spy script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/VH3Ew6Y5"))()
+end)
+
+BimaCockSection:NewToggle("Hitbox", "Expand other players hitbox", function(state)
+    if state then
+        _G.HeadSize = 50 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+    else
+        _G.HeadSize = 0 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+    end
+end)
+    
+BimaCockSection:NewButton("FE BTOOLS", "Execute fe btools script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/JZtpmexw"))()
+end)
+    
+BimaCockSection:NewButton("Moveable Fluxus UI", "make fluxus ui moveable", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
+end)
+    
+    
+-- Admin
+local MuafaSex = Window:NewTab("Admin")
+local MuafaSexSection = MuafaSex:NewSection("Admin Power")
+
+MuafaSexSection:NewButton("Infinite Yield", "Give you infinite yield script.", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+MuafaSexSection:NewButton("ShatterVast Admin", "Give you ShatterVast Admin script.", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/m66HEHFu"))()
+end)
+
+MuafaSexSection:NewButton("CMD-X", "Executed CMD-X Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+
+MuafaSexSection:NewButton("Fates Admin", "Executed Fates Admin Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+MuafaSexSection:NewButton("Reviz Admin", "Executed Reviz Admin Script", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+end)
+
+-- Other
+
+local RiffatGay = Window:NewTab("Other Hub / Guis")
+local RiffatGaySection = RiffatGay:NewSection("Other Hub / Guis")
+
+
+RiffatGaySection:NewButton("Ice Hub", "Execute Ice Hub Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+RiffatGaySection:NewButton("Hoho Hub", "Execute HoHo Hub Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+-- Games
+
+local DaffaNegro = Window:NewTab("Games")
+local DaffaNegroSection = DaffaNegro:NewSection("Section Name")
+
+DaffaNegroSection:NewLabel("Soon...")
+
+-- Credits
+
+    local Homie = Window:NewTab("Credits")
+    local HomieSection = Homie:NewSection("Credits")
+
+    HomieSection:NewLabel("Created by Coldster#3759")
+    
+HomieSection:NewButton("YouTube : Coldster", "Sub to Coldster!", function()
+    setclipboard("www.youtube.com/@Coldster")
+end)
+
+HomieSection:NewButton("My Discord Server", "join my discord server!", function()
+    setclipboard("https://discord.gg/4EbnAbXDPY")
+end)
+
+
+
+
 end)
 
 BimaCockSection:NewButton("FE Animation Hub", "Executed FE Animation Hub", function()
