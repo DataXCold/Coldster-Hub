@@ -1,6 +1,30 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Coldster Hub | Universal", "Ocean")
 
+-- Information
+
+local LuvJHP = Window:NewTab("Info")
+local LuvJHPSection = LuvJHP:NewSection("Update / Changes :")
+
+LuvJHPSection:NewLabel("~ Added a few script hubs to other hub / guis tab")
+
+LuvJHPSection:NewLabel("~ Added few script games to games tab")
+
+LuvJHPSection:NewLabel("Made by Coldster#3759 / Subscribe to Coldster!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Local
 local AthaCum = Window:NewTab("Local")
 local AthaCumSection = AthaCum:NewSection("Local Player")
@@ -24,6 +48,10 @@ end)
     
 AthaCumSection:NewSlider("FOV", "Change your camera FOV", 120, 80, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Workspace.CurrentCamera.FieldOfView = s
+end)
+    
+AthaCumSection:NewSlider("Hip Height", "Change your Hip Height", 500, 1, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
 end)
     
 -- Main
