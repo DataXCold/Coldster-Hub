@@ -136,12 +136,96 @@ RiffatGaySection:NewButton("Hoho Hub", "Execute HoHo Hub Script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
+RiffatGaySection:NewButton("MSHub", "Execute MSHub Script", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+end)
+
+RiffatGaySection:NewButton("Lightux", "Execute Lightux Script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+RiffatGaySection:NewButton("Proxima Hub", "Execute Proxima hub loader Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
 -- Games
 
 local DaffaNegro = Window:NewTab("Games")
-local DaffaNegroSection = DaffaNegro:NewSection("Games")
+local DaffaNegroSection = DaffaNegro:NewSection("Murder Party")
 
-DaffaNegroSection:NewLabel("Soon...")
+
+DaffaNegroSection:NewButton("Murder Party Hax", "Execute First Script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dP4ZR5CS"))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Arsenal")
+
+DaffaNegroSection:NewButton("PWNER Hub", "Made by Bolt#0027 & AndrewDarkyy#7782", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()  
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Pet Simulator X")
+
+DaffaNegroSection:NewButton("Milk Up Hub", "Made by Milk Up", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Doors")
+
+DaffaNegroSection:NewButton("MSHUB", "Made by mstudio45 & fishlock", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+end)
+
+DaffaNegroSection:NewButton("NeRD V4", "Made by NeRD#0950", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsnerdv4.lua"))()
+end)
+
+DaffaNegroSection:NewButton("DxrkHub", "Made by ???", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/main/doors-scripts/hub-source"))()
+end)
+
+DaffaNegroSection:NewButton("BlackKing", "Made by ???", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("3008")
+
+DaffaNegroSection:NewButton("Godmode", "Inf energy, stamina, health", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CHnamedata/WhatDaHeck/main/3008GodMode.lua'))()
+end)
+
+DaffaNegroSection:NewButton("SCP 3008", "Execute a GUI", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Murder Mystery 2")
+
+DaffaNegroSection:NewButton("Admin Panel", "Made by Andro Script ig:/", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Build a boat for treasure")
+
+DaffaNegroSection:NewButton("Cloud Hub", "W Hax", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripters/CloudHub/main/hub"))()
+end)
+
+DaffaNegroSection:NewButton("Build a boat", "W Hax & Made by NooVster!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NooVster/v1.1/main/Source'))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Slap Battle")
+
+DaffaNegroSection:NewButton("R2O Hub", "W Hax & Made by Anakin#3568!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DataXCold/name/main/R2O-Hub-All-In-One'))()
+end)
+
+local DaffaNegroSection = DaffaNegro:NewSection("Pls Donate")
+
+DaffaNegroSection:NewButton("Script 1", "W Hax & Made by ?!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+end)
+
 
 -- Credits
 
@@ -157,3 +241,6 @@ end)
 HomieSection:NewButton("My Discord Server", "join my discord server!", function()
     setclipboard("https://discord.gg/4EbnAbXDPY")
 end)
+
+
+
