@@ -54,6 +54,16 @@ AthaCumSection:NewSlider("Hip Height", "Change your Hip Height", 500, 1, functio
     game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
 end)
     
+AthaCumSection:NewKeybind("Set Keybind", "Set a keybind to toggle UI", Enum.KeyCode.RightControl, function()
+	print("You just clicked the bind")
+end)
+
+AthaCumSection:NewKeybind("Toggle UI", "Toggling UI with Keybinds", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+
+
+
 -- Main
 
 local BimaCock = Window:NewTab("Main")
@@ -232,6 +242,22 @@ DaffaNegroSection:NewButton("Admin Panel", "Made by Andro Script ig:/", function
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
 end)
 
+DaffaNegroSection:NewButton("Kidichi Hub", "Use Keyboard script for mobile to toggle UI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/MM2", true))()
+end)
+
+DaffaNegroSection:NewButton("Ski Hub", "No key-system & mobile friendly UI", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/203DBjLx", true))()
+end)
+
+DaffaNegroSection:NewButton("Nexus", "Use Keyboard script for mobile to toggle UI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/F2B-HUB/F2B/main/HUB"))()
+end)
+
+DaffaNegroSection:NewButton("Sorix Hub", "No Key-system & mobile friendly UI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JunBloxYTPlayz/SORIX-Hub/main/Murder%20Mystery%202%20Version%20X"))()
+end)
+
 local DaffaNegroSection = DaffaNegro:NewSection("Build a boat for treasure")
 
 DaffaNegroSection:NewButton("Cloud Hub", "W Hax", function()
@@ -250,7 +276,7 @@ end)
 
 local DaffaNegroSection = DaffaNegro:NewSection("Pls Donate")
 
-DaffaNegroSection:NewButton("Script 1", "W Hax & Made by ?!", function()
+DaffaNegroSection:NewButton("Script 1", "W Hax & Mobile Friendly UI", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
 end)
 
@@ -269,6 +295,4 @@ end)
 HomieSection:NewButton("My Discord Server", "join my discord server!", function()
     setclipboard("https://discord.gg/4EbnAbXDPY")
 end)
-
-
 
